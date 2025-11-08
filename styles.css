@@ -1,67 +1,109 @@
+/* Global Styles */
 body {
-    font-family: sans-serif;
-    background-color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f8fc;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-div {
+  display: flex;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-div:hover {
+  transform: scale(1.02);
+}
+
+/* Column Styles */
+.upper,
+.mid,
+.lower {
+  padding: 0 30px;
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+.upper {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.mid {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.lower {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Typography */
+h1 {
+  padding-left: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  padding-left: 20px;
+  line-height: 1.5;
+  font-size: 0.85rem; /* Smaller and cleaner */
+  opacity: 0.9;
+}
+
+/* Images */
+img {
+  padding-top: 50px;
+  padding-left: 25px;
+  width: 60px;
+}
+
+/* Buttons */
+button {
+  margin: 20px 30px;
+  width: 130px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 786px) {
+  .main-div {
+    flex-direction: column;
   }
 
   nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: auto;
+    padding: 40px 0;
   }
 
-  @media(max-width:786px) {
-    .main-div {
-      display: flex;
-      flex-direction: column;
-    }
-    nav{
-      height: auto;
-    }
+  p {
+    font-size: 0.9rem; /* Slightly larger for readability on small screens */
   }
 
-  .main-div {
-    display: flex;
+  button {
+    width: 160px; /* Increased width for better appearance */
+    padding: 12px 24px;
   }
-
-  .upper {
-    background-color: hsl(31, 77%, 52%);
-    color: hsla(0, 0%, 100%, 0.75);
-    padding:0px 30px;
-  }
-
-  .mid {
-    background-color: hsl(184, 100%, 22%);
-    color: hsla(0, 0%, 100%, 0.75);
-    padding:0px 30px;
-  }
-
-  .lower {
-    background-color: hsl(179, 100%, 13%);
-    color: hsla(0, 0%, 100%, 0.75);
-    padding:0px 30px;
-  }
-
-   img {
-    padding-top: 50px;
-    padding-left: 25px;
-  }
-   h1 {
-    padding-left: 20px;
-  }
-
-
-   p {
-    padding-left: 20px;
-  }
-
-
-   button {
-    margin:20px 30px;
-    width: 130px;
-    border-radius:50px;
-    padding:10px 20px;
-    padding-left: 20px;
-    cursor: pointer;
-    border-color:white;
-  }
+}

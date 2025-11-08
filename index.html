@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Frontend Mentor | 3-column preview card component</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
-  <title>Frontend Mentor | 3-column preview card component</title>
-</head>
+  <body>
+    <nav>
+      <div class="main-div">
+        <div class="upper">
+          <img src="icon-sedans.svg" alt="image1" />
+          <h1>SEDANS</h1>
+          <p>
+            Choose a sedan for its<br />
+            affordability and excellent<br />
+            fuel economy. Ideal for<br />
+            cruising in the city or on<br />
+            your next road trip.<br />
+          </p>
+          <button class="btn-orange">Learn More</button>
+        </div>
 
-<body>
+        <div class="mid">
+          <img src="icon-suvs.svg" alt="image2" />
+          <h1>SUVS</h1>
+          <p>
+            Take an SUV for its spacious<br />
+            interior, power, and<br />
+            versatility. Perfect for your<br />
+            next family vacation and<br />
+            off-road adventures.<br />
+          </p>
+          <button class="btn-blue">Learn More</button>
+        </div>
 
-  <nav>
-    <div class="main-div">
-      <div class="upper">
-        <img src="icon-sedans.svg" alt="image1">
-        <h1>SEDANS</h1>
-        <p>Choose a sedan for its<br>affordability and excellent<br>fuel economy. Ideal for<br>cruising in the city
-          or on<br>your next road trip.<br></p>
-        <button>Learn More</button>
+        <div class="lower">
+          <img src="icon-luxury.svg" alt="image3" />
+          <h1>LUXURY</h1>
+          <p>
+            Cruise in the best car <br />
+            without the bloated prices.<br />
+            Enjoy the enhanced comfort <br />
+            of a luxury rental and arrive<br />
+            in style.<br />
+          </p>
+          <button class="btn-dark">Learn More</button>
+        </div>
       </div>
-
-      <div class="mid">
-        <img src="icon-suvs.svg" alt="image2">
-        <h1>SUVS</h1>
-        <p>Take an SUV for its spacious<br> interior, power, and<br> versatility. Perfect for your<br> next family
-          vacation
-          and<br> off-road adventures.<br></p>
-        <button>Learn More</button>
-      </div>
-
-      <div class="lower">
-        <img src="icon-luxury.svg" alt="image3">
-        <h1>LUXURY</h1>
-        <p>
-          Cruise in the best car <br> without the bloated prices.<br> Enjoy the enhanced comfort <br>of a luxury
-          rental and arrive<br> in styl.<br></p>
-        <button>Learn More</button>
-      </div>
-    </div>
-  </nav>
-</body>
-
+    </nav>
+  </body>
 </html>
