@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f8fc;
@@ -25,7 +24,6 @@ nav {
   transform: scale(1.02);
 }
 
-/* Column Styles */
 .upper,
 .mid,
 .lower {
@@ -45,7 +43,6 @@ nav {
   background-color: hsl(179, 100%, 13%);
 }
 
-/* Typography */
 h1 {
   padding-left: 20px;
   font-weight: 600;
@@ -60,14 +57,12 @@ p {
   opacity: 0.9;
 }
 
-/* Images */
 img {
   padding-top: 50px;
   padding-left: 25px;
   width: 60px;
 }
 
-/* Buttons */
 button {
   margin: 20px 30px;
   width: 130px;
@@ -99,11 +94,11 @@ button:hover {
   }
 
   p {
-    font-size: 0.9rem; /* Slightly larger for readability on small screens */
+    font-size: 0.9rem;
   }
 
   button {
-    width: 160px; /* Increased width for better appearance */
+    width: 160px;
     padding: 12px 24px;
   }
 }
